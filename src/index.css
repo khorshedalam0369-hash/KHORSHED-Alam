@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hind Siliguri", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Bangladesh Deep Green and Soft Emerald/Gold Theme */
+  --color-forest-950: #052214;
+  --color-forest-900: #062f1c;
+  --color-forest-800: #064025;
+  --color-forest-750: #084e2e;
+  --color-forest-700: #0b5e39;
+  --color-forest-600: #108552;
+  --color-forest-500: #16a365;
+  --color-forest-400: #22c57e;
+  --color-forest-300: #4ade9e;
+  --color-forest-200: #86efc2;
+  --color-forest-100: #d1fae7;
+  --color-forest-50: #f0fdf6;
+
+  --color-gold-50: #fefce8;
+  --color-gold-100: #fef9c3;
+  --color-gold-200: #fef08a;
+  --color-gold-300: #fde047;
+  --color-gold-400: #facc15;
+  --color-gold-500: #eab308;
+  --color-gold-600: #ca8a04;
+  --color-gold-700: #a16207;
+  --color-gold-800: #854d0e;
+  --color-gold-900: #713f12;
+}
+
+@layer utilities {
+  .clip-path-slant {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  .clip-path-slant-sm {
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  }
+}
+
+/* Custom glow animations and interactive ripples */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 126, 0.4), 0 0 0 0 rgba(34, 197, 126, 0.4);
+  }
+  40% {
+    box-shadow: 0 0 0 8px rgba(34, 197, 126, 0.2), 0 0 0 0 rgba(34, 197, 126, 0.4);
+  }
+  80% {
+    box-shadow: 0 0 0 16px rgba(34, 197, 126, 0), 0 0 0 8px rgba(34, 197, 126, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 126, 0), 0 0 0 16px rgba(34, 197, 126, 0);
+  }
+}
+
+.ripple-glow {
+  animation: ripple 2s infinite;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Ulipur Upazila Information Hub",
+  "description": "A modern and responsive directory website for Ulipur Upazila, Kurigram, Bangladesh, featuring local services, administrative bodies, healthcare, educational institutions, and commercial market information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
